@@ -1,0 +1,45 @@
+.container {
+  position: absolute;
+  top: 30px;
+  right: 179px;
+}
+
+#burst-12 {
+  background: red;
+  width: 90px;
+  height: 90px;
+  position: relative;
+  text-align: center;
+
+  color: white;
+  transform: rotate(20deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+#burst-12:before,
+#burst-12:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90px;
+  width: 90px;
+  background: red;
+  z-index: -1;
+}
+#burst-12:before {
+  transform: rotate(30deg);
+}
+#burst-12:after {
+  transform: rotate(60deg);
+}
+
+img {
+  position: absolute;
+  left: 30px;
+  top: 70px;
+  height: 200px;
+  width: 150px;
+}
